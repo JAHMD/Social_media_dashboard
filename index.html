@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Social media dashboard</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- font awesome files -->
+    <link rel="stylesheet" href="./public/all.min.css" />
+    <!-- main css file -->
+    <link rel="stylesheet" href="./public/styles.css" />
+    <!-- font awesome script file -->
+    <script src="./public/all.min.js"></script>
+    <!-- main js file -->
+    <script src="./public/index.js" defer></script>
+  </head>
+  <body
+    class="font-Inter text-heading bg-white dark:bg-darkMode-blueBackground min-h-screen relative"
+  >
+    <!-- nav bar -->
+    <nav class="bg-lightMode-blueTop dark:bg-darkMode-blueTop pb-32">
+      <!-- header container -->
+      <div
+        class="flex justify-between flex-col sm:flex-row sm:items-center container p-8"
+      >
+        <!-- heading title -->
+        <div
+          class="title border-b-[1px] pb-4 border-lightMode-blueText darK:border-darkMode-blueText sm:border-0 sm:p-0 mb-4 sm:mb-0"
+        >
+          <h1
+            class="text-lightMode-darkBlueText dark:text-white text-2xl font-bold mb-1"
+          >
+            Social Media Dashboard
+          </h1>
+          <p
+            class="text-lightMode-blueText dark:text-darkMode-blueText font-bold"
+          >
+            Total Followers: 23,004
+          </p>
+        </div>
+        <!-- mode button container -->
+        <div class="mode-container flex items-center justify-between">
+          <p
+            class="text-lightMode-blueText dark:text-darkMode-blueText font-bold mr-4"
+          >
+            Dark Mode
+          </p>
+          <div
+            id="dark-btn"
+            class="h-6 w-12 rounded-full flex items-center p-1 cursor-pointer bg-primary-toggle-light dark:bg-gradient-to-r from-primary-toggle-darkFrom to-primary-toggle-darkTo transition-colors"
+          >
+            <span
+              class="w-4 h-4 bg-white -translate-x-0 dark:translate-x-6 dark:bg-darkMode-blueBackground rounded-full inline-block transition-all"
+            ></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- cards section -->
+    <main class="container p-8 -mt-32">
+      <!-- Main cards section -->
+      <section
+        class="main-cards-container space-y-8 sm:space-y-0 sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 text-center mb-10"
+      >
+        <!-- card -->
+        <div class="card overflow-hidden relative">
+          <span
+            class="top h-1 w-full absolute top-0 left-0 bg-primary-Facebook"
+          ></span>
+          <div
+            class="header flex font-bold text-lightMode-blueText justify-center mb-4 gap-2 items-center"
+          >
+            <i class="text-2xl fa-brands fa-facebook text-primary-Facebook"></i>
+            <h4 class="dark:text-darkMode-blueText">@nathanf</h4>
+          </div>
+          <span class="text-6xl mb-1 font-bold dark:text-white">1987</span>
+          <p class="text-darkMode-blueText tracking-[0.3em] text-sm uppercase">
+            Followers
+          </p>
+          <p class="text-xs text-primary-limeGreen font-bold mt-4">
+            <i class="fa-solid fa-caret-up mr-1"></i><span>12</span> Today
+          </p>
+        </div>
+        <!-- card -->
+        <div class="card overflow-hidden relative">
+          <span
+            class="top h-1 w-full absolute top-0 left-0 bg-primary-Twitter"
+          ></span>
+          <div
+            class="header flex font-bold text-lightMode-blueText dark:text-darkMode-blueText justify-center mb-4 gap-2 items-center"
+          >
+            <i class="text-2xl fa-brands fa-twitter text-primary-Facebook"></i>
+            <h4 class="dark:text-darkMode-blueText">@nathanf</h4>
+          </div>
+          <span class="text-6xl mb-1 font-bold dark:text-white">1044</span>
+          <p class="text-darkMode-blueText tracking-[0.3em] text-sm uppercase">
+            Followers
+          </p>
+          <p class="text-xs text-primary-limeGreen font-bold mt-4">
+            <i class="fa-solid fa-caret-up mr-1"></i><span>99</span> Today
+          </p>
+        </div>
+        <!-- card -->
+        <div class="card overflow-hidden relative">
+          <span
+            class="top h-1 w-full absolute top-0 left-0 bg-gradient-to-r from-primary-InstagramFrom to-primary-InstagramTo"
+          ></span>
+          <div
+            class="header flex font-bold text-lightMode-blueText dark:text-darkMode-blueText justify-center mb-4 gap-2 items-center"
+          >
+            <i
+              class="text-2xl fa-brands fa-instagram text-primary-InstagramFrom"
+            ></i>
+            <h4 class="dark:text-darkMode-blueText">@realnathanf</h4>
+          </div>
+          <span class="text-6xl mb-1 font-bold dark:text-white">11k</span>
+          <p class="text-darkMode-blueText tracking-[0.3em] text-sm uppercase">
+            Followers
+          </p>
+          <p class="text-xs text-primary-limeGreen font-bold mt-4">
+            <i class="fa-solid fa-caret-up mr-1"></i><span>1099</span> Today
+          </p>
+        </div>
+        <!-- card -->
+        <div class="card overflow-hidden relative">
+          <span
+            class="top h-1 w-full absolute top-0 left-0 bg-primary-YouTube"
+          ></span>
+          <div
+            class="header flex font-bold text-lightMode-blueText dark:text-darkMode-blueText justify-center mb-4 gap-2 items-center"
+          >
+            <i class="text-2xl fa-brands fa-youtube text-primary-YouTube"></i>
+            <h4 class="dark:text-darkMode-blueText">Nathan F.</h4>
+          </div>
+          <span class="text-6xl mb-1 font-bold dark:text-white">8239</span>
+          <p class="text-darkMode-blueText tracking-[0.3em] text-sm uppercase">
+            Subscribers
+          </p>
+          <p class="text-xs font-bold mt-4 text-primary-brightRed">
+            <i class="fa-solid fa-caret-down mr-1"></i><span>144</span> Today
+          </p>
+        </div>
+      </section>
+      <!-- Today card section -->
+      <section class="today-cards mb-8">
+        <h3
+          class="text-xl text-lightMode-blueText dark:text-darkMode-blueText font-bold mb-4"
+        >
+          Overview-Today
+        </h3>
+        <!-- cards-container -->
+        <div
+          class="cards-container space-y-4 sm:space-y-0 sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 text-center"
+        >
+          <div class="card">
+            <div
+              class="heading text-md text-lightMode-blueText dark:text-darkMode-blueText font-bold mb-4 flex justify-between"
+            >
+              <p class="title">Page Views</p>
+              <i
+                class="text-2xl fa-brands fa-facebook text-primary-Facebook"
+              ></i>
+            </div>
+            <div class="state flex justify-between items-center">
+              <p class="number dark:text-white font-bold text-3xl">87</p>
+              <p class="text-primary-limeGreen updates font-bold text-xs">
+                <i class="fa-solid fa-caret-up mr-1"></i>3%
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div
+              class="heading text-md text-lightMode-blueText dark:text-darkMode-blueText font-bold mb-4 flex justify-between"
+            >
+              <p class="title">Likes</p>
+              <i
+                class="text-2xl fa-brands fa-facebook text-primary-Facebook"
+              ></i>
+            </div>
+            <div class="state flex justify-between items-center">
+              <p class="number dark:text-white font-bold text-3xl">52</p>
+              <p class="text-primary-brightRed update font-bold text-xs">
+                <i class="fa-solid fa-caret-down mr-1"></i>2%
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div
+              class="heading text-md text-lightMode-blueText dark:text-darkMode-blueText font-bold mb-4 flex justify-between"
+            >
+              <p class="title">Page Views</p>
+              <i
+                class="text-2xl fa-brands fa-instagram text-primary-InstagramFrom"
+              ></i>
+            </div>
+            <div class="state flex justify-between items-center">
+              <p class="number dark:text-white font-bold text-3xl">52k</p>
+              <p class="text-primary-limeGreen updates font-bold text-xs">
+                <i class="fa-solid fa-caret-up mr-1"></i>1375%
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div
+              class="heading text-md text-lightMode-blueText dark:text-darkMode-blueText font-bold mb-4 flex justify-between"
+            >
+              <p class="title">Likes</p>
+              <i
+                class="text-2xl fa-brands fa-instagram text-primary-InstagramFrom"
+              ></i>
+            </div>
+            <div class="state flex justify-between items-center">
+              <p class="number dark:text-white font-bold text-3xl">5462</p>
+              <p class="text-primary-limeGreen updates font-bold text-xs">
+                <i class="fa-solid fa-caret-up mr-1"></i>2257%
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div
+              class="heading text-md text-lightMode-blueText dark:text-darkMode-blueText font-bold mb-4 flex justify-between"
+            >
+              <p class="title">Retweets</p>
+              <i
+                class="text-2xl fa-brands fa-twitter text-primary-Facebook"
+              ></i>
+            </div>
+            <div class="state flex justify-between items-center">
+              <p class="number dark:text-white font-bold text-3xl">117</p>
+              <p class="text-primary-limeGreen updates font-bold text-xs">
+                <i class="fa-solid fa-caret-up mr-1"></i>303%
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div
+              class="heading text-md text-lightMode-blueText dark:text-darkMode-blueText font-bold mb-4 flex justify-between"
+            >
+              <p class="title">Likes</p>
+              <i
+                class="text-2xl fa-brands fa-twitter text-primary-Facebook"
+              ></i>
+            </div>
+            <div class="state flex justify-between items-center">
+              <p class="number dark:text-white font-bold text-3xl">507</p>
+              <p class="text-primary-limeGreen updates font-bold text-xs">
+                <i class="fa-solid fa-caret-up mr-1"></i>553%
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div
+              class="heading text-md text-lightMode-blueText dark:text-darkMode-blueText font-bold mb-4 flex justify-between"
+            >
+              <p class="title">Total Views</p>
+              <i class="text-2xl fa-brands fa-youtube text-primary-YouTube"></i>
+            </div>
+            <div class="state flex justify-between items-center">
+              <p class="number font-bold text-3xl dark:text-white">1407</p>
+              <p class="text-primary-brightRed updates font-bold text-xs">
+                <i class="fa-solid fa-caret-down mr-1"></i>12%
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div
+              class="heading text-md text-lightMode-blueText dark:text-darkMode-blueText font-bold mb-4 flex justify-between"
+            >
+              <p class="title">Likes</p>
+              <i class="text-2xl fa-brands fa-youtube text-primary-YouTube"></i>
+            </div>
+            <div class="state flex justify-between items-center">
+              <p class="number font-bold text-3xl dark:text-white">107</p>
+              <p class="text-primary-brightRed updates font-bold text-xs">
+                <i class="fa-solid fa-caret-down mr-1"></i>19%
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 
+      Overview - Today
+      Page Views 87 3% Likes 52 2% Likes 5462 2257% Profile Views 52k 1375%
+      Retweets 117 303% Likes 507 553% Likes 107 19% Total Views 1407 12% -->
+
+    <!-- footer -->
+    <div
+      class="attribution text-xs text-center dark:text-white absolute left-0 right-0 bottom-0"
+    >
+      Challenge by
+      <a
+        class="dark:text-darkMode-blueText"
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
