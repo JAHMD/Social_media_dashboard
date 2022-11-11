@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Demo](https://jahmd.github.io/Social_dedia_dashboard/)
+- Live Site URL: [Demo](https://jahmd.github.io/Social_media_dashboard/)
 
 ### Built with
 
